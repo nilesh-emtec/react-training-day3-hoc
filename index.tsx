@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import Hello from "./Hello";
-import {Comp} from "./Hello1";
+import Hello1 from "./Hello1";
 import "./style.css";
 interface AppProps {}
 interface AppState {
@@ -24,7 +24,7 @@ class App extends Component<AppProps, AppState> {
         <Hello name={this.state.name} />
         <br />
         <br />
-        <Comp name={this.state.react} />
+        <Hello1 name={this.state.react} />
       </div>
     );
   }
